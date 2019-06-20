@@ -10,7 +10,7 @@ function charityPull(){
     console.log(searchTerm);
     var key = "b1bcb5038ce8b872aaf3c3f6c7d3b3eb";
     $("body").empty();
-    var queryURL = "https://data.orghunter.com/v1/charitysearch?user_key=" + key + "&searchTerm=" + searchTerm;
+    var queryURL = "http://data.orghunter.com/v1/charitysearch?user_key=" + key + "&searchTerm=" + searchTerm;
     console.log(queryURL);
     $.ajax({
         headers: {"access-control-allow-origin": "https://orghunter.3scale.net", "access-control-allow-credentials": "true", "content-type" : "application/json"},
