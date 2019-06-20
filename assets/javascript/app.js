@@ -23,7 +23,7 @@ function charityPull(){
 };
 
 function setHeader(xhr){
-    xhr.setRequestHeader("Authorization", token);
+    xhr.setRequestHeader("Authorization", key);
 }
 
 function populatePage(){
