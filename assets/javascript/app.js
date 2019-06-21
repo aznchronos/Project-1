@@ -21,10 +21,10 @@ function charityPull() {
             var result = response[i];
             console.log("got into then");
             charName = response[i].charityName;
-            charAddress = response[i].mailingAddress;
+            charAddress = (response[i].mailingAddress.streetAddress1 + "<br>" + response[i].mailingAddress.city + ", " + response[i].mailingAddress.stateOrProvince + "<br>" + response[i].mailingAddress.postalCode);
             console.log(result);
-            console.log(charName);
-            console.log(charAddress);
+            // console.log(charName);
+            // console.log(charAddress);
             $("#contentInformation > tbody").append("<tr><td>" + charName + "</td><td>" + charAddress + "</td>")
             $("#search-term").val("");
         }
@@ -42,6 +42,6 @@ function populatePage() {
         // Creates a newly generated table w/ id contentInformation
         "<div class='card-body'><table class='table' id='contentInformation'>" +
         // Establishes the thead as Charity Name and gives a tbody for information
-        "<thead><tr><th scope='col'>Charity Name</th></tr></thead><tbody></tbody></table></div></div>";
+        "<thead><tr><th scope='col'>Name</th><th scope='col'>Address</th></tr></thead><tbody></tbody></table></div></div>";
     $("#contentInformation").html(newPage);
 }
