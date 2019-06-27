@@ -1,0 +1,54 @@
+img, .charInfo{
+    cursor: pointer;
+    display: inline-block;
+}
+
+body{
+    background-image: url("../images/charityBackground.jpg");
+    background-size:2000px;
+    background-repeat: no-repeat;
+    background-position-x:center;
+    background-attachment: fixed;
+}
+
+#mapid {
+    height: 250px;
+}
+
+#box1{
+    /*border:1px solid black;*/
+    width:600px;
+    margin:auto;
+    margin-top: 120px;
+}
+
+.logo{
+    height:300px;
+    margin:0px 0px 0px 40px;
+}
+
+.search{
+    margin:0px 0px 0px 250px;
+}
+
+.newsearch {
+    float: right;
+}
+
+.invis {
+    display: none;
+}
+
+.show {
+    display: block;
+}
+
+.charMap{
+    width: 30%;
+}
+
+@media screen and (max-width: 600px){
+    .charMap {
+        display: none;
+    };
+};
