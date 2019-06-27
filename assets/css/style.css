@@ -51,5 +51,8 @@ body {
   .charMap {
     display: none;
   }
+  #mapid{
+    display: none;
+  }
 }
 /*# sourceMappingURL=style.css.map */
